@@ -1,0 +1,3 @@
+# Maquette de visualisation, non destinee au referencement.
+User-agent: *
+Disallow: /

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="background:#E9EDF2;padding:clamp(0px,1.6vw,20px);">
+<div style="max-width:1320px;margin:0 auto;background:#fff;border-radius:clamp(0px,1.6vw,22px);overflow:hidden;box-shadow:0 30px 80px rgba(12,48,87,.14);">
+
+  <header style="position:relative;background:#0A2748;overflow:hidden;">
+    <img src="{{ p.hero }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.42;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,39,72,.97) 0%,rgba(10,39,72,.82) 50%,rgba(0,74,173,.35) 100%);"></div>
+    <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#5DE0E6,#004AAD);"></div>
+    <dc-import name="Nav" lang="en" alt="{{ altHref }}" active="expertises" hint-size="100%,104px"></dc-import>
+    <div style="position:relative;padding:clamp(30px,5vw,60px) clamp(20px,5vw,64px) clamp(60px,8vw,100px);max-width:860px;">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:22px;"><a href="index-en.html" style="color:rgba(255,255,255,.55);" style-hover="color:#5DE0E6;">Home</a><span>/</span><a href="expertises-en.html" style="color:rgba(255,255,255,.55);" style-hover="color:#5DE0E6;">Expertise</a><span>/</span><span style="color:#5DE0E6;">{{ p.short }}</span></div>
+      <div style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);border-radius:999px;padding:7px 16px;margin-bottom:22px;"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;">{{ p.n }}</span><span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;">Practice area</span></div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(38px,5vw,66px);line-height:1.05;color:#fff;text-wrap:balance;">{{ p.title }}</h1>
+      <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,.75);margin-top:22px;max-width:640px;text-wrap:pretty;">{{ p.lead }}</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:32px;">
+        <a href="contact-en.html" style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#5DE0E6,#004AAD);color:#fff;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 10px 26px rgba(0,74,173,.32);padding:6px 22px 6px 6px;font-size:14px;font-weight:600;transition:transform .4s cubic-bezier(.2,.8,.2,1),filter .3s;" style-hover="color:#fff;filter:brightness(1.08);transform:translateY(-2px);"><span style="width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Consult this practice</a>
+        <a href="https://wa.me/237655272037" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);color:#fff;border-radius:999px;padding:0 22px;height:50px;font-size:14px;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .3s;" style-hover="color:#fff;background:rgba(37,211,102,.85);transform:translateY(-2px);"><span style="width:8px;height:8px;border-radius:50%;background:#25D366;"></span>WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section style="position:relative;background:radial-gradient(38% 45% at 8% 18%,rgba(93,224,230,.22),rgba(93,224,230,0) 70%),radial-gradient(40% 50% at 92% 85%,rgba(0,74,173,.14),rgba(0,74,173,0) 70%),#fff;padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="faisceaux" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;"><span style="width:7px;height:7px;border-radius:50%;background:#5DE0E6;"></span><span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8A97A6;">Our services</span></div>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.1;color:#0C3057;margin-bottom:40px;">Six areas <em style="color:#004AAD;">of practice</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(260px,calc((100% - 36px) / 3))),1fr));gap:18px;">
+      <sc-for list="{{ items }}" as="it" hint-placeholder-count="6">
+        <div style="background:rgba(255,255,255,.62);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:28px;box-shadow:inset 0 1px 0 #fff,0 10px 30px rgba(12,48,87,.08);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;" style-hover="transform:translateY(-6px);box-shadow:inset 0 1px 0 #fff,0 22px 46px rgba(12,48,87,.14);">
+          <div style="font-family:'Playfair Display',serif;font-size:30px;color:#5DE0E6;">{{ it.n }}</div>
+          <div style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.25;color:#0C3057;margin-top:16px;">{{ it.t }}</div>
+          <p style="font-size:14.5px;line-height:1.7;color:#42586C;margin-top:10px;">{{ it.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:0 clamp(12px,2vw,24px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="lignes" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="position:relative;border-radius:28px;overflow:hidden;background:#0A2748;min-height:420px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));">
+      <div style="position:relative;min-height:320px;"><img src="{{ p.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ p.pos }};" /><div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,39,72,0) 50%,rgba(10,39,72,.9) 100%);"></div></div>
+      <div style="position:relative;padding:clamp(30px,5vw,60px);display:flex;flex-direction:column;justify-content:center;">
+        <span style="align-self:flex-start;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);border-radius:8px;padding:6px 12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);">Case study</span>
+        <p style="font-family:'Playfair Display',serif;font-size:clamp(21px,2.4vw,28px);line-height:1.45;color:#fff;margin-top:22px;text-wrap:pretty;">{{ p.cas }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="points" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;"><span style="width:7px;height:7px;border-radius:50%;background:#5DE0E6;"></span><span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8A97A6;">Our method</span></div>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.1;color:#0C3057;margin-bottom:36px;">Four steps, <em style="color:#004AAD;">one lead contact</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,165px),1fr));border-top:1px solid #E6EAF0;">
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">01</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Scoping</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Initial discussion, document review, definition of scope, timeline and fees.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">02</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Analysis</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">In-depth technical review by the dedicated practice and mapping of the options.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">03</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Recommendation</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Summary memo, quantified impact and operational roadmap.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">04</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Implementation</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Deeds, formalities, negotiation or representation, with follow-up to completion.</p></div>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:0 clamp(20px,5vw,64px) clamp(60px,8vw,100px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="faisceaux" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px;">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3vw,38px);color:#0C3057;">Our other practices</h2>
+      <a href="expertises-en.html" style="font-size:13px;font-weight:600;color:#004AAD;border-bottom:1px solid #004AAD;padding-bottom:3px;" style-hover="color:#5DE0E6;border-color:#5DE0E6;">All areas of expertise</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;">
+      <sc-for list="{{ others }}" as="o" hint-placeholder-count="3">
+        <a href="{{ o.href }}" style="position:relative;min-height:240px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 30px 60px rgba(12,48,87,.28);">
+          <img src="{{ o.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ o.pos }};" />
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,39,72,.1) 20%,rgba(10,39,72,.92) 100%);"></div>
+          <div style="position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:14px;">
+            <div><div style="font-family:'Playfair Display',serif;font-size:16px;color:#5DE0E6;">{{ o.n }}</div><div style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.2;color:#fff;margin-top:4px;">{{ o.title }}</div></div>
+            <span style="flex:none;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 #fff;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <dc-import name="Footer" lang="en" hint-size="100%,560px"></dc-import>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pole&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;affaires&quot;,&quot;fiscalite&quot;,&quot;douane&quot;,&quot;ppp&quot;],&quot;default&quot;:&quot;affaires&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  P = {
+    affaires: { href:'droit-des-affaires-en.html', n:'01', short:'Business law', title:'Business law', img:'assets/photo-affaires.png', hero:'assets/hero-affaires.jpg', pos:'center',
+      lead:"We secure the legal life of companies, from incorporation to growth transactions, in line with OHADA law and local regulations.",
+      cas:"Entry of a minority investor into the capital of a distribution SME: legal due diligence, drafting of the shareholders' agreement, amendment of the articles and completion of formalities through to RCCM registration.",
+      items:[["Incorporation & Structuring","Choice of legal form, articles of association, shareholders' agreements, governance."],["Commercial Contracts","Drafting, negotiation and review of strategic and recurring commitments."],["Equity Transactions","Share transfers, mergers and acquisitions, restructurings and due diligence."],["Employment & HR Law","Employment contracts, workforce restructuring, terminations, pre-litigation."],["Debt Recovery & Security","Formal notices, simplified recovery procedures, enforcement measures."],["Litigation & Arbitration","Commercial dispute management, representation before courts and arbitral tribunals."]] },
+    fiscalite: { href:'fiscalite-en.html', n:'02', short:'Taxation', title:'Taxation', img:'assets/photo-fiscalite.png', hero:'assets/hero-fiscalite.jpg', pos:'center',
+      lead:"We treat taxation as a tool for optimisation and security: anticipating deadlines, compliant filings and defence during tax inspections.",
+      cas:"General tax audit covering three financial years: in-depth analysis of the notified reassessments, challenge based on expense deductibility and negotiation of a settlement before litigation.",
+      items:[["Tax Advice & Monitoring","Written opinions, monitoring of Finance Laws, tax impact analysis."],["Audit & Review","Priority review of filed returns and risk mapping."],["Tax Inspections","Assistance during on-site inspections, responses to notices, negotiations."],["Tax Litigation","Tax claims, administrative appeals and court proceedings."],["Transfer Pricing","Mandatory documentation of intra-group flows, justification of pricing methods."],["International Taxation","Application of double tax treaties, management of withholding taxes."]] },
+    douane: { href:'douane-transit-en.html', n:'03', short:'Customs & transit', title:'Customs & transit', img:'assets/photo-douane.png', hero:'assets/hero-douane.jpg', pos:'center',
+      lead:"Port clearance and cross-border operations concentrate critical costs and risks. We secure tariff classification, customs regimes and dispute resolution.",
+      cas:"Regularisation of goods under a suspensive regime held at the Port of Douala: negotiated release, reduction of customs penalties and an internal procedure to anticipate deadlines.",
+      items:[["Classification & Valuation","Tariff heading, determination of origin and customs value control."],["Suspensive & Economic Regimes","Temporary admission, customs warehousing, transit and discharge."],["Customs Litigation","Challenging official reports, negotiating penalties, defence against reassessments."],["Import-Export Compliance","Audit of customs procedures, supply-chain security, regulatory compliance."],["Trade Facilitation","Obtaining approvals, preferential regimes and support with the authorities."],["Regional Transit & Corridors","Monitoring of sub-regional (CEMAC) declarations, management of guarantees and discharges."]] },
+    ppp: { href:'marches-publics-ppp-en.html', n:'04', short:'Public procurement & PPP', title:'Public procurement & PPP', img:'assets/photo-ppp.jpg', hero:'assets/hero-ppp.jpg', pos:'70% center',
+      lead:"We support private companies and public entities in structuring, bidding for and performing public contracts and Public-Private Partnerships.",
+      cas:"Support for a consortium in an international PPP tender: review of the technical and legal bid, securing the concession contract and representation in negotiations with the contracting authority.",
+      items:[["PPP Structuring","Legal and financial structuring of infrastructure projects under PPP."],["Bids & Tenders","Analysis of tender documents (DAO), legal security of bid preparation."],["Contract Negotiation","Drafting, review and negotiation of public-private partnership contracts."],["Performance & Amendments","Performance monitoring, handling of financial claims and drafting of amendments."],["Public Procurement Litigation","Administrative appeals and challenges before the regulator (ARMP) and the courts."],["Compliance Audits","Regularity audits of public procurement award procedures."]] }
+  };
+  renderVals() {
+    const key = this.P[this.props.pole] ? this.props.pole : 'affaires';
+    const p = this.P[key];
+    return {
+      p, altHref: p.href.replace('-en.html', '.html'),
+      items: p.items.map(([t, d], i) => ({ n: String(i + 1).padStart(2, '0'), t, d })),
+      others: Object.keys(this.P).filter(k => k !== key).map(k => this.P[k])
+    };
+  }
+}
+</script>
+</body>
+</html>

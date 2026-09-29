@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="background:#E9EDF2;padding:clamp(0px,1.6vw,20px);">
+<div style="max-width:1320px;margin:0 auto;background:#fff;border-radius:clamp(0px,1.6vw,22px);overflow:hidden;box-shadow:0 30px 80px rgba(12,48,87,.14);">
+
+  <header style="position:relative;background:#0A2748;overflow:hidden;">
+    <img src="{{ p.hero }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.42;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,39,72,.97) 0%,rgba(10,39,72,.82) 50%,rgba(0,74,173,.35) 100%);"></div>
+    <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#5DE0E6,#004AAD);"></div>
+    <dc-import name="Nav" alt="{{ altHref }}" active="expertises" hint-size="100%,104px"></dc-import>
+    <div style="position:relative;padding:clamp(30px,5vw,60px) clamp(20px,5vw,64px) clamp(60px,8vw,100px);max-width:860px;">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:22px;"><a href="index.html" style="color:rgba(255,255,255,.55);" style-hover="color:#5DE0E6;">Accueil</a><span>/</span><a href="expertises.html" style="color:rgba(255,255,255,.55);" style-hover="color:#5DE0E6;">Expertises</a><span>/</span><span style="color:#5DE0E6;">{{ p.short }}</span></div>
+      <div style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);border-radius:999px;padding:7px 16px;margin-bottom:22px;"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;">{{ p.n }}</span><span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;">Pôle d'expertise</span></div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(38px,5vw,66px);line-height:1.05;color:#fff;text-wrap:balance;">{{ p.title }}</h1>
+      <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,.75);margin-top:22px;max-width:640px;text-wrap:pretty;">{{ p.lead }}</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:32px;">
+        <a href="contact.html" style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#5DE0E6,#004AAD);color:#fff;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 10px 26px rgba(0,74,173,.32);padding:6px 22px 6px 6px;font-size:14px;font-weight:600;transition:transform .4s cubic-bezier(.2,.8,.2,1),filter .3s;" style-hover="color:#fff;filter:brightness(1.08);transform:translateY(-2px);"><span style="width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Consulter ce pôle</a>
+        <a href="https://wa.me/237655272037" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3);color:#fff;border-radius:999px;padding:0 22px;height:50px;font-size:14px;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .3s;" style-hover="color:#fff;background:rgba(37,211,102,.85);transform:translateY(-2px);"><span style="width:8px;height:8px;border-radius:50%;background:#25D366;"></span>WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section style="position:relative;background:radial-gradient(38% 45% at 8% 18%,rgba(93,224,230,.22),rgba(93,224,230,0) 70%),radial-gradient(40% 50% at 92% 85%,rgba(0,74,173,.14),rgba(0,74,173,0) 70%),#fff;padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="faisceaux" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;"><span style="width:7px;height:7px;border-radius:50%;background:#5DE0E6;"></span><span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8A97A6;">Nos interventions</span></div>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.1;color:#0C3057;margin-bottom:40px;">Six domaines <em style="color:#004AAD;">d'intervention</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(260px,calc((100% - 36px) / 3))),1fr));gap:18px;">
+      <sc-for list="{{ items }}" as="it" hint-placeholder-count="6">
+        <div style="background:rgba(255,255,255,.62);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:28px;box-shadow:inset 0 1px 0 #fff,0 10px 30px rgba(12,48,87,.08);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;" style-hover="transform:translateY(-6px);box-shadow:inset 0 1px 0 #fff,0 22px 46px rgba(12,48,87,.14);">
+          <div style="font-family:'Playfair Display',serif;font-size:30px;color:#5DE0E6;">{{ it.n }}</div>
+          <div style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.25;color:#0C3057;margin-top:16px;">{{ it.t }}</div>
+          <p style="font-size:14.5px;line-height:1.7;color:#42586C;margin-top:10px;">{{ it.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:0 clamp(12px,2vw,24px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="lignes" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="position:relative;border-radius:28px;overflow:hidden;background:#0A2748;min-height:420px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));">
+      <div style="position:relative;min-height:320px;"><img src="{{ p.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ p.pos }};" /><div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,39,72,0) 50%,rgba(10,39,72,.9) 100%);"></div></div>
+      <div style="position:relative;padding:clamp(30px,5vw,60px);display:flex;flex-direction:column;justify-content:center;">
+        <span style="align-self:flex-start;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);border-radius:8px;padding:6px 12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);">Cas d'usage</span>
+        <p style="font-family:'Playfair Display',serif;font-size:clamp(21px,2.4vw,28px);line-height:1.45;color:#fff;margin-top:22px;text-wrap:pretty;">{{ p.cas }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="points" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;"><span style="width:7px;height:7px;border-radius:50%;background:#5DE0E6;"></span><span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8A97A6;">Notre méthode</span></div>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.1;color:#0C3057;margin-bottom:36px;">Quatre étapes, <em style="color:#004AAD;">un interlocuteur référent</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,165px),1fr));border-top:1px solid #E6EAF0;">
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">01</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Cadrage</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Échange initial, examen des pièces, définition du périmètre, des délais et des honoraires.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">02</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Analyse</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Étude technique approfondie par le pôle dédié et cartographie des options.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">03</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Recommandation</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Note de synthèse, impacts chiffrés et feuille de route opérationnelle.</p></div>
+      <div style="padding:24px 22px 24px 0;"><div style="font-family:'Playfair Display',serif;font-size:34px;color:#5DE0E6;">04</div><div style="font-family:'Playfair Display',serif;font-size:21px;color:#0C3057;margin-top:10px;">Mise en œuvre</div><p style="font-size:13.5px;line-height:1.65;color:#42586C;margin-top:8px;">Actes, formalités, négociation ou représentation, suivi jusqu'à l'aboutissement.</p></div>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:0 clamp(20px,5vw,64px) clamp(60px,8vw,100px);overflow:hidden;isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="faisceaux" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px;">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3vw,38px);color:#0C3057;">Nos autres pôles</h2>
+      <a href="expertises.html" style="font-size:13px;font-weight:600;color:#004AAD;border-bottom:1px solid #004AAD;padding-bottom:3px;" style-hover="color:#5DE0E6;border-color:#5DE0E6;">Toutes les expertises</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;">
+      <sc-for list="{{ others }}" as="o" hint-placeholder-count="3">
+        <a href="{{ o.href }}" style="position:relative;min-height:240px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 30px 60px rgba(12,48,87,.28);">
+          <img src="{{ o.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ o.pos }};" />
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,39,72,.1) 20%,rgba(10,39,72,.92) 100%);"></div>
+          <div style="position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:14px;">
+            <div><div style="font-family:'Playfair Display',serif;font-size:16px;color:#5DE0E6;">{{ o.n }}</div><div style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.2;color:#fff;margin-top:4px;">{{ o.title }}</div></div>
+            <span style="flex:none;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 #fff;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pole&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;affaires&quot;,&quot;fiscalite&quot;,&quot;douane&quot;,&quot;ppp&quot;],&quot;default&quot;:&quot;affaires&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  P = {
+    affaires: { href:'droit-des-affaires.html', n:'01', short:'Droit des affaires', title:'Droit des affaires', img:'assets/photo-affaires.png', hero:'assets/hero-affaires.jpg', pos:'center',
+      lead:"Nous sécurisons la vie juridique des entreprises, de leur création à leurs opérations de croissance, selon les exigences du droit OHADA et des réglementations locales.",
+      cas:"Entrée d'un investisseur minoritaire au capital d'une PME de distribution : audit juridique préalable, rédaction du pacte d'actionnaires, modification des statuts et accomplissement des formalités jusqu'à l'inscription au RCCM.",
+      items:[["Création & Structuration","Choix de la forme sociale, rédaction des statuts, pactes d'associés, gouvernance."],["Contrats Commerciaux","Rédaction, négociation et audit des engagements stratégiques et récurrents."],["Opérations sur Capital","Cessions de titres, fusions-acquisitions, restructurations et due diligence."],["Droit Social & RH","Contrats de travail, restructurations sociales, gestion des ruptures, précontentieux."],["Recouvrement & Sûretés","Mises en demeure, procédures simplifiées de recouvrement, voies d'exécution."],["Contentieux & Arbitrage","Gestion des litiges commerciaux, représentation devant les juridictions et instances arbitrales."]] },
+    fiscalite: { href:'fiscalite.html', n:'02', short:'Fiscalité', title:'Fiscalité', img:'assets/photo-fiscalite.png', hero:'assets/hero-fiscalite.jpg', pos:'center',
+      lead:"Nous traitons la fiscalité comme un outil d'optimisation et de sécurité : anticipation des échéances, conformité des déclarations et défense en cas de contrôle.",
+      cas:"Vérification générale de comptabilité sur trois exercices : analyse approfondie des redressements notifiés, contestation fondée sur la déductibilité des charges et négociation d'une transaction avant la phase contentieuse.",
+      items:[["Conseil & Veille Fiscale","Consultations écrites, suivi des Lois de Finances, analyse des impacts fiscaux."],["Audit & Diagnostic","Revue prioritaire des déclarations souscrites et cartographie des risques."],["Contrôle Fiscal","Assistance lors des vérifications sur place, préparation des réponses aux notifications, négociations."],["Contentieux Fiscal","Réclamations contentieuses, recours hiérarchiques et procédures devant les juridictions."],["Prix de Transfert","Documentations obligatoires des flux intragroupes, justification des méthodes de facturation."],["Fiscalité Internationale","Application des conventions de non-double imposition, gestion des retenues à la source."]] },
+    douane: { href:'douane-transit.html', n:'03', short:'Douane & transit', title:'Douane & transit', img:'assets/photo-douane.png', hero:'assets/hero-douane.jpg', pos:'center',
+      lead:"Le passage portuaire et les opérations transfrontalières concentrent des coûts et des risques critiques. Nous sécurisons le classement tarifaire, les régimes douaniers et la résolution des litiges.",
+      cas:"Régularisation de marchandises sous régime suspensif bloquées au port de Douala : négociation d'une mainlevée, atténuation des pénalités douanières et mise en place d'une procédure interne d'anticipation des échéances.",
+      items:[["Classement & Valorisation","Position tarifaire, détermination de l'origine et contrôle de la valeur en douane."],["Régimes Suspensifs & Économiques","Admission temporaire, entrepôt de douane, transit et apurement."],["Contentieux Douanier","Contestation des procès-verbaux, négociation des pénalités, défense contre les redressements."],["Conformité Import-Export","Audit des procédures douanières, sécurisation de la chaîne logistique, conformité réglementaire."],["Facilitation des Échanges","Obtention d'agréments, régimes privilégiés et accompagnement auprès des administrations."],["Transit Régional & Corridors","Suivi des déclarations sous-régionales (CEMAC), gestion des cautions et apurements."]] },
+    ppp: { href:'marches-publics-ppp.html', n:'04', short:'Marchés publics & PPP', title:'Marchés publics & PPP', img:'assets/photo-ppp.jpg', hero:'assets/hero-ppp.jpg', pos:'70% center',
+      lead:"Nous accompagnons les entreprises privées et les entités publiques dans le montage, la soumission et l'exécution des contrats de la commande publique et des Partenariats Public-Privé.",
+      cas:"Accompagnement d'un groupement d'entreprises dans le cadre d'un appel d'offres international de PPP : validation de l'offre technique et juridique, sécurisation du contrat de concession et représentation lors des négociations avec l'autorité contractante.",
+      items:[["Montage & Structuration de PPP","Assistance au montage juridique et financier des projets d'infrastructure en mode PPP."],["Offres & Candidatures","Analyse des Dossiers d'Appel d'Offres (DAO), sécurisation juridique du montage des offres."],["Négociation Contractuelle","Rédaction, revue et négociation des contrats de partenariat public-privé."],["Exécution & Avenants","Suivi de l'exécution, gestion des réclamations financières et rédaction des avenants."],["Contentieux de la Commande Publique","Recours gracieux et contestations devant les organes de régulation (ARMP) et les tribunaux."],["Audits de Conformité","Audit de régularité des procédures de passation des marchés publics."]] }
+  };
+  renderVals() {
+    const key = this.P[this.props.pole] ? this.props.pole : 'affaires';
+    const p = this.P[key];
+    return {
+      p, altHref: p.href.replace('.html', '-en.html'),
+      items: p.items.map(([t, d], i) => ({ n: String(i + 1).padStart(2, '0'), t, d })),
+      others: Object.keys(this.P).filter(k => k !== key).map(k => this.P[k])
+    };
+  }
+}
+</script>
+</body>
+</html>

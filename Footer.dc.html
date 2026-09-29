@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<footer style="position:relative;background:#0A2748;overflow:hidden;">
+  <div aria-hidden="true" style="position:relative;text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(56px,13vw,190px);line-height:1.12;letter-spacing:-.03em;padding-top:30px;background:linear-gradient(180deg,#fff 0%,#DDE9F7 40%,rgba(93,224,230,.35) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap;overflow:hidden;user-select:none;">{{ t.big }}</div>
+  <div style="position:absolute;top:0;left:0;right:0;height:120px;background:linear-gradient(180deg,#fff,rgba(255,255,255,0));pointer-events:none;"></div>
+  <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:34px;padding:50px clamp(20px,5vw,64px) 34px;">
+    <div>
+      <img src="assets/logo-lexs-ondark.png" alt="LexSolutions" style="height:40px;width:auto;display:block;" />
+      <p style="font-family:'Playfair Display',serif;font-size:19px;line-height:1.35;color:#fff;margin-top:20px;max-width:240px;">{{ t.tag }}</p>
+    </div>
+    <div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:16px;">Navigation</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="{{ t.hHome }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.home }}</a>
+        <a href="{{ t.hExp }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.exp }}</a>
+        <a href="{{ t.hFirm }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.firm }}</a>
+        <a href="{{ t.hBlog }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.blog }}</a>
+        <a href="{{ t.hContact }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:16px;">{{ t.poles }}</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="{{ t.hp0 }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.p1 }}</a>
+        <a href="{{ t.hp1 }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.p2 }}</a>
+        <a href="{{ t.hp2 }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.p3 }}</a>
+        <a href="{{ t.hp3 }}" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">{{ t.p4 }}</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:16px;">{{ t.reach }}</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="tel:+237655272037" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">+237 655 27 20 37</a>
+        <a href="https://wa.me/237655272037" target="_blank" rel="noopener" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">WhatsApp</a>
+        <a href="mailto:contact@lexsolutions.cm" style="font-size:14px;color:rgba(255,255,255,.65);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#5DE0E6;transform:translateY(-2px);">contact@lexsolutions.cm</a>
+        <span style="font-size:14px;color:rgba(255,255,255,.65);">Douala · Yaoundé, Cameroun</span>
+      </div>
+    </div>
+  </div>
+  <div style="position:relative;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding:20px clamp(20px,5vw,64px);font-size:12px;color:rgba(255,255,255,.45);">
+    <div style="display:flex;gap:18px;flex-wrap:wrap;"><span>{{ t.copy }}</span><a href="{{ t.hLegal }}" style="color:rgba(255,255,255,.65);" style-hover="color:#5DE0E6;">{{ t.legal }}</a><a href="{{ t.hPriv }}" style="color:rgba(255,255,255,.65);" style-hover="color:#5DE0E6;">{{ t.priv }}</a></div>
+    <span style="letter-spacing:.18em;text-transform:uppercase;">{{ t.values }}</span>
+  </div>
+</footer>
+<a href="https://wa.me/237655272037?text=Bonjour%20LexSolutions%2C%20je%20souhaite%20vous%20exposer%20mon%20dossier." target="_blank" rel="noopener" aria-label="Contacter LexSolutions sur WhatsApp" style="position:fixed;right:clamp(14px,2vw,26px);bottom:clamp(14px,2vw,26px);z-index:60;display:flex;align-items:center;gap:10px;background:rgba(37,211,102,.82);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:8px 20px 8px 8px;font-size:14px;font-weight:600;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 6px rgba(0,80,40,.2),0 14px 34px rgba(10,39,72,.3);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="color:#fff;transform:translateY(-3px) scale(1.04);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 20px 44px rgba(37,211,102,.45);">
+  <span style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4.5 19.5l1.1-3.6A8 8 0 1 1 8.4 18.6z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"></path><path d="M9.2 8.6c.2-.4.5-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.1-.1.3 0 .5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5 0l.5-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.3-1.2.5-2 .3-2.2-.6-4-2.4-4.6-4.6-.2-.8 0-1.5.3-2z" fill="#fff"></path></svg>
+  </span>
+  WhatsApp
+</a>
+<sc-if value="{{ showCookies }}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-label="Cookies" style="position:fixed;left:clamp(14px,2vw,26px);bottom:clamp(14px,2vw,26px);z-index:70;width:min(420px,calc(100% - 28px));border-radius:22px;padding:22px;background:rgba(10,39,72,.9);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 24px 60px rgba(5,20,40,.45);display:flex;flex-direction:column;gap:14px;color:#fff;">
+  <div style="font-family:'Playfair Display',serif;font-size:20px;">Cookies</div>
+  <p style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.8);">{{ t.ck }} <a href="{{ t.hPriv }}" style="color:#5DE0E6;">{{ t.more }}</a></p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;">
+    <button type="button" onClick="{{ accept }}" style="all:unset;cursor:pointer;background:#fff;color:#0C3057;border-radius:999px;padding:10px 20px;font-size:13.5px;font-weight:600;" style-hover="background:#5DE0E6;">{{ t.acc }}</button>
+    <button type="button" onClick="{{ refuse }}" style="all:unset;cursor:pointer;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:10px 20px;font-size:13.5px;font-weight:600;" style-hover="border-color:#5DE0E6;">{{ t.ref }}</button>
+  </div>
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:560}}">
+class Component extends DCLogic {
+  state = { show: false };
+  open = () => this.setState({ show: true });
+  componentDidMount() { let v = null; try { v = localStorage.getItem('ls-cookies'); } catch (e) {} if (!v) this.setState({ show: true }); window.addEventListener('ls-cookies-open', this.open); }
+  componentWillUnmount() { window.removeEventListener('ls-cookies-open', this.open); }
+  choose(v) { try { localStorage.setItem('ls-cookies', v); } catch (e) {} this.setState({ show: false }); window.dispatchEvent(new CustomEvent('ls-cookies', { detail: v })); }
+  renderVals() {
+    const en = this.props.lang === 'en', x = en ? '-en' : '';
+    const t = en ? { big:'Contact us', tag:'Expertise that protects your growth.', home:'Home', blog:'Insights', exp:'Expertise', firm:'The firm', poles:'Practices', reach:'Reach us', p1:'Business law', p2:'Taxation', p3:'Customs & transit', p4:'Public procurement & PPP', copy:'© 2026 LexSolutions. All rights reserved.', legal:'Legal notice', priv:'Privacy & cookies', values:'Excellence · Integrity · Responsiveness', ck:'We use audience measurement cookies only with your consent.', more:'Learn more', acc:'Accept', ref:'Decline' }
+      : { big:'Contactez-nous', tag:"L'expertise qui protège votre croissance.", home:'Accueil', blog:'Blog', exp:'Expertises', firm:'Le cabinet', poles:'Pôles', reach:'Nous joindre', p1:'Droit des affaires', p2:'Fiscalité', p3:'Douane & transit', p4:'Marchés publics & PPP', copy:'© 2026 LexSolutions. Tous droits réservés.', legal:'Mentions légales', priv:'Confidentialité et cookies', values:'Excellence · Intégrité · Réactivité', ck:"Nous utilisons des cookies de mesure d'audience uniquement avec votre accord.", more:'En savoir plus', acc:'Accepter', ref:'Refuser' };
+    Object.assign(t, { hHome:'index'+x+'.html', hExp:'expertises'+x+'.html', hFirm:'cabinet'+x+'.html', hContact:'contact'+x+'.html', hBlog:'blog'+x+'.html', hp0:'droit-des-affaires'+x+'.html', hp1:'fiscalite'+x+'.html', hp2:'douane-transit'+x+'.html', hp3:'marches-publics-ppp'+x+'.html', hLegal:'mentions-legales'+x+'.html', hPriv:'confidentialite'+x+'.html' });
+    return { t, showCookies: this.state.show, accept: () => this.choose('accepted'), refuse: () => this.choose('refused') }; }
+}
+</script>
+</body>
+</html>

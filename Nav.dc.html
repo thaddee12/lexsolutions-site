@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="position:relative;z-index:50;height:124px;">
+  <nav style="position:fixed;top:34px;left:50%;transform:translateX(-50%);width:min(1260px,calc(100% - 28px));z-index:80;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:nowrap;padding:8px 8px 8px 18px;border-radius:30px;background:{{ navBg }};backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(255,255,255,.06),0 12px 40px rgba(5,20,40,{{ navShadow }});transition:background .4s ease,box-shadow .4s ease;">
+    <a href="{{ hAccueil }}" style="display:flex;align-items:center;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .3s;" style-hover="transform:scale(1.04);opacity:.9;"><img src="assets/logo-lexs-ondark.png" alt="LexSolutions" style="height:clamp(28px,3.2vw,38px);width:auto;display:block;" /></a>
+    <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;gap:2px;flex-wrap:nowrap;padding:4px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);">
+      <a href="{{ hAccueil }}" style="font-size:13px;padding:8px clamp(8px,1.1vw,15px);border-radius:999px;color:{{ cAccueil }};background:{{ bAccueil }};box-shadow:{{ sAccueil }};transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="color:#fff;background:rgba(255,255,255,.14);transform:translateY(-1px);">{{ tAccueil }}</a>
+      <div onMouseEnter="{{ openMenu }}" onMouseLeave="{{ closeMenu }}" style="position:relative;">
+        <a href="{{ hExpertises }}" onClick="{{ tapMenu }}" style="display:flex;align-items:center;gap:6px;font-size:13px;padding:8px clamp(6px,1vw,13px) 8px clamp(8px,1.1vw,15px);border-radius:999px;color:{{ cExpertises }};background:{{ bExpertises }};box-shadow:{{ sExpertises }};transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="color:#fff;background:rgba(255,255,255,.14);">{{ tExpertises }}<svg width="10" height="10" viewBox="0 0 12 12" fill="none" style="transform:{{ chev }};transition:transform .3s;"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <div style="position:absolute;top:100%;left:50%;padding-top:14px;width:340px;max-width:calc(100vw - 40px);opacity:{{ menuOpacity }};visibility:{{ menuVis }};transform:translateX(-50%) translateY({{ menuY }});transition:opacity .3s ease,transform .35s cubic-bezier(.2,.8,.2,1),visibility .3s;">
+          <div style="border-radius:22px;padding:8px;background:rgba(10,39,72,.78);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 24px 60px rgba(5,20,40,.45);display:flex;flex-direction:column;gap:2px;">
+            <a href="{{ hp0 }}" style="display:flex;gap:14px;align-items:center;padding:12px 14px;border-radius:14px;color:#fff;transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(255,255,255,.1);color:#fff;transform:translateX(3px);"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;width:22px;">01</span><span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:14px;font-weight:600;">{{ p1 }}</span><span style="font-size:12px;color:rgba(255,255,255,.6);">{{ d1 }}</span></span></a>
+            <a href="{{ hp1 }}" style="display:flex;gap:14px;align-items:center;padding:12px 14px;border-radius:14px;color:#fff;transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(255,255,255,.1);color:#fff;transform:translateX(3px);"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;width:22px;">02</span><span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:14px;font-weight:600;">{{ p2 }}</span><span style="font-size:12px;color:rgba(255,255,255,.6);">{{ d2 }}</span></span></a>
+            <a href="{{ hp2 }}" style="display:flex;gap:14px;align-items:center;padding:12px 14px;border-radius:14px;color:#fff;transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(255,255,255,.1);color:#fff;transform:translateX(3px);"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;width:22px;">03</span><span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:14px;font-weight:600;">{{ p3 }}</span><span style="font-size:12px;color:rgba(255,255,255,.6);">{{ d3 }}</span></span></a>
+            <a href="{{ hp3 }}" style="display:flex;gap:14px;align-items:center;padding:12px 14px;border-radius:14px;color:#fff;transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(255,255,255,.1);color:#fff;transform:translateX(3px);"><span style="font-family:'Playfair Display',serif;font-size:15px;color:#5DE0E6;width:22px;">04</span><span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:14px;font-weight:600;">{{ p4 }}</span><span style="font-size:12px;color:rgba(255,255,255,.6);">{{ d4 }}</span></span></a>
+            <a href="{{ hExpertises }}" style="margin-top:4px;padding:11px 14px;border-radius:14px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;font-weight:600;color:#5DE0E6;transition:all .3s;" style-hover="background:rgba(93,224,230,.12);color:#5DE0E6;">{{ tOverview }}</a>
+          </div>
+        </div>
+      </div>
+      <a href="{{ hCabinet }}" style="font-size:13px;padding:8px clamp(8px,1.1vw,15px);border-radius:999px;color:{{ cCabinet }};background:{{ bCabinet }};box-shadow:{{ sCabinet }};transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="color:#fff;background:rgba(255,255,255,.14);transform:translateY(-1px);">{{ tCabinet }}</a>
+      <a href="{{ hBlog }}" style="font-size:13px;padding:8px clamp(8px,1.1vw,15px);border-radius:999px;color:{{ cBlog }};background:{{ bBlog }};box-shadow:{{ sBlog }};transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="color:#fff;background:rgba(255,255,255,.14);transform:translateY(-1px);">{{ tBlog }}</a>
+      <a href="{{ hContact }}" style="font-size:13px;padding:8px clamp(8px,1.1vw,15px);border-radius:999px;color:{{ cContact }};background:{{ bContact }};box-shadow:{{ sContact }};transition:all .3s cubic-bezier(.2,.8,.2,1);" style-hover="color:#fff;background:rgba(255,255,255,.14);transform:translateY(-1px);">Contact</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <a href="{{ altHref }}" hreflang="{{ altLang }}" aria-label="{{ altLabel }}" title="{{ altLabel }}" style="flex:none;height:40px;padding:0 4px;border-radius:999px;display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);font-size:11.5px;font-weight:600;letter-spacing:.06em;transition:all .3s ease;" style-hover="border-color:rgba(93,224,230,.6);"><span style="padding:6px 8px;border-radius:999px;color:{{ cFR }};background:{{ bFR }};">FR</span><span style="padding:6px 8px;border-radius:999px;color:{{ cEN }};background:{{ bEN }};">EN</span></a>
+      <button onClick="{{ toggleTheme }}" aria-label="{{ themeLabel }}" title="{{ themeLabel }}" style="all:unset;cursor:pointer;flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);color:#fff;transition:all .35s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(93,224,230,.2);border-color:rgba(93,224,230,.6);transform:rotate(-18deg);">
+        <sc-if value="{{ isNight }}" hint-placeholder-val="{{ false }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5DE0E6" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"></path></svg></sc-if>
+        <sc-if value="{{ isDay }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"></path></svg></sc-if>
+      </button>
+    <a href="{{ hContact }}" style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);color:#0C3057;border-radius:999px;padding:6px clamp(6px,1.4vw,18px) 6px 6px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:inset 0 1px 0 #fff,0 6px 18px rgba(0,0,0,.18);transition:all .35s cubic-bezier(.2,.8,.2,1);" style-hover="background:#5DE0E6;color:#0C3057;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 12px 28px rgba(93,224,230,.4);">
+      <span style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#5DE0E6,#004AAD);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      {{ tRdv }}
+    </a>
+    </div>
+    </sc-if>
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:8px;">
+      <a href="{{ altHref }}" hreflang="{{ altLang }}" aria-label="{{ altLabel }}" title="{{ altLabel }}" style="flex:none;height:40px;padding:0 4px;border-radius:999px;display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);font-size:11.5px;font-weight:600;letter-spacing:.06em;transition:all .3s ease;" style-hover="border-color:rgba(93,224,230,.6);"><span style="padding:6px 8px;border-radius:999px;color:{{ cFR }};background:{{ bFR }};">FR</span><span style="padding:6px 8px;border-radius:999px;color:{{ cEN }};background:{{ bEN }};">EN</span></a>
+      <button onClick="{{ toggleTheme }}" aria-label="{{ themeLabel }}" title="{{ themeLabel }}" style="all:unset;cursor:pointer;flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);color:#fff;transition:all .35s cubic-bezier(.2,.8,.2,1);" style-hover="background:rgba(93,224,230,.2);border-color:rgba(93,224,230,.6);transform:rotate(-18deg);">
+        <sc-if value="{{ isNight }}" hint-placeholder-val="{{ false }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5DE0E6" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"></path></svg></sc-if>
+        <sc-if value="{{ isDay }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"></path></svg></sc-if>
+      </button>
+      <button onClick="{{ toggleMob }}" aria-label="Menu" aria-expanded="{{ mobOpen }}" style="all:unset;cursor:pointer;width:44px;height:44px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.18);">
+        <span style="width:18px;height:2px;border-radius:2px;background:#fff;transition:transform .3s;transform:{{ l1 }};"></span>
+        <span style="width:18px;height:2px;border-radius:2px;background:#fff;transition:opacity .3s;opacity:{{ l2 }};"></span>
+        <span style="width:18px;height:2px;border-radius:2px;background:#fff;transition:transform .3s;transform:{{ l3 }};"></span>
+      </button>
+      </div>
+    </sc-if>
+  </nav>
+  <sc-if value="{{ mobOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;top:112px;left:14px;right:14px;max-height:calc(100dvh - 126px);overflow-y:auto;z-index:79;border-radius:24px;padding:10px;background:rgba(10,39,72,.9);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 24px 60px rgba(5,20,40,.5);display:flex;flex-direction:column;gap:2px;">
+      <a href="{{ hAccueil }}" style="padding:14px 16px;border-radius:14px;font-size:16px;color:{{ cAccueil }};background:{{ bAccueil }};">{{ tAccueil }}</a>
+      <a href="{{ hExpertises }}" style="padding:14px 16px;border-radius:14px;font-size:16px;color:{{ cExpertises }};background:{{ bExpertises }};">{{ tExpertises }}</a>
+      <div style="display:flex;flex-direction:column;gap:2px;padding:0 0 6px 14px;border-left:1px solid rgba(93,224,230,.3);margin-left:16px;">
+        <a href="{{ hp0 }}" style="padding:10px 12px;border-radius:12px;font-size:14px;color:rgba(255,255,255,.85);display:flex;gap:10px;"><span style="font-family:'Playfair Display',serif;color:#5DE0E6;">01</span>{{ p1 }}</a>
+        <a href="{{ hp1 }}" style="padding:10px 12px;border-radius:12px;font-size:14px;color:rgba(255,255,255,.85);display:flex;gap:10px;"><span style="font-family:'Playfair Display',serif;color:#5DE0E6;">02</span>{{ p2 }}</a>
+        <a href="{{ hp2 }}" style="padding:10px 12px;border-radius:12px;font-size:14px;color:rgba(255,255,255,.85);display:flex;gap:10px;"><span style="font-family:'Playfair Display',serif;color:#5DE0E6;">03</span>{{ p3 }}</a>
+        <a href="{{ hp3 }}" style="padding:10px 12px;border-radius:12px;font-size:14px;color:rgba(255,255,255,.85);display:flex;gap:10px;"><span style="font-family:'Playfair Display',serif;color:#5DE0E6;">04</span>{{ p4 }}</a>
+      </div>
+      <a href="{{ hCabinet }}" style="padding:14px 16px;border-radius:14px;font-size:16px;color:{{ cCabinet }};background:{{ bCabinet }};">{{ tCabinet }}</a>
+      <a href="{{ hBlog }}" style="padding:14px 16px;border-radius:14px;font-size:16px;color:{{ cBlog }};background:{{ bBlog }};">{{ tBlog }}</a>
+      <a href="{{ hContact }}" style="padding:14px 16px;border-radius:14px;font-size:16px;color:{{ cContact }};background:{{ bContact }};">Contact</a>
+      <a href="{{ hContact }}" style="margin-top:8px;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#0C3057;border-radius:999px;padding:14px 18px;font-size:15px;font-weight:600;">{{ tRdv }}</a>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:110},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;accueil&quot;,&quot;cabinet&quot;,&quot;expertises&quot;,&quot;blog&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;accueil&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;lang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;fr&quot;,&quot;en&quot;],&quot;default&quot;:&quot;fr&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;alt&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, mobile: typeof window !== 'undefined' && window.innerWidth < 1080, mob: false };
+  onResize = () => { const m = window.innerWidth < 1080; if (m !== this.state.mobile) this.setState({ mobile: m, mob: false }); };
+  onScroll = () => { const s = window.scrollY > 40; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+  onTheme = () => this.setState({ night: window.lsTheme && window.lsTheme() === 'night' });
+  componentDidMount() { window.addEventListener('ls-theme', this.onTheme); this.onTheme(); window.addEventListener('scroll', this.onScroll, { passive: true }); window.addEventListener('resize', this.onResize); this.onScroll(); this.onResize(); }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onResize); window.removeEventListener('ls-theme', this.onTheme); }
+  renderVals() {
+    const a = this.props.active ?? 'accueil';
+    const en = this.props.lang === 'en', x = en ? '-en' : '';
+    const L = en ? { tAccueil:'Home', tBlog:'Insights', tExpertises:'Expertise', tCabinet:'The firm', tRdv:'Book a meeting', tOverview:'Overview of our expertise', p1:'Business law', p2:'Taxation', p3:'Customs & transit', p4:'Public procurement & PPP', d1:'Companies, contracts, equity, disputes', d2:'Advice, audit, tax inspections, disputes', d3:'Tariffs, regimes, disputes, corridors', d4:'Bids, PPP structuring, performance' }
+      : { tAccueil:'Accueil', tBlog:'Blog', tExpertises:'Expertises', tCabinet:'Le cabinet', tRdv:'Prendre rendez-vous', tOverview:"Vue d'ensemble des expertises", p1:'Droit des affaires', p2:'Fiscalité', p3:'Douane & transit', p4:'Marchés publics & PPP', d1:'Sociétés, contrats, capital, contentieux', d2:'Conseil, audit, contrôle, contentieux', d3:'Tarif, régimes, litiges, corridors', d4:'Offres, montage PPP, exécution' };
+    Object.assign(L, { hAccueil:'index'+x+'.html', hExpertises:'expertises'+x+'.html', hCabinet:'cabinet'+x+'.html', hContact:'contact'+x+'.html', hBlog:'blog'+x+'.html', hp0:'droit-des-affaires'+x+'.html', hp1:'fiscalite'+x+'.html', hp2:'douane-transit'+x+'.html', hp3:'marches-publics-ppp'+x+'.html',
+      altHref: this.props.alt ?? (en ? 'index.html' : 'index-en.html'), altLang: en ? 'fr' : 'en', altLabel: en ? 'Version française' : 'English version',
+      cFR: en ? 'rgba(255,255,255,.7)' : '#0C3057', bFR: en ? 'transparent' : '#5DE0E6', cEN: en ? '#0C3057' : 'rgba(255,255,255,.7)', bEN: en ? '#5DE0E6' : 'transparent' });
+    const m = !!this.state.menu;
+    const v = {
+      openMenu: () => this.setState({ menu: true }),
+      closeMenu: () => this.setState({ menu: false }),
+      tapMenu: e => { if (window.matchMedia('(hover: none)').matches && !this.state.menu) { e.preventDefault(); this.setState({ menu: true }); } },
+      menuOpacity: m ? 1 : 0, menuVis: m ? 'visible' : 'hidden', menuY: m ? '0px' : '-8px', chev: m ? 'rotate(180deg)' : 'rotate(0deg)',
+      navBg: this.state.scrolled ? 'rgba(10,39,72,.72)' : 'rgba(10,39,72,.28)', navShadow: this.state.scrolled ? '.35' : '.12' };
+    const mo = this.state.mobile, op = mo && this.state.mob;
+    const nt = !!this.state.night;
+    Object.assign(v, { isNight: nt, isDay: !nt, themeLabel: nt ? 'Passer en mode jour' : 'Passer en mode nuit', toggleTheme: () => window.lsSetTheme && window.lsSetTheme(nt ? 'day' : 'night'), mobile: mo, desktop: !mo, mobOpen: op, toggleMob: () => this.setState(s => ({ mob: !s.mob })), l1: op ? 'translateY(7px) rotate(45deg)' : 'none', l2: op ? 0 : 1, l3: op ? 'translateY(-7px) rotate(-45deg)' : 'none' });
+    ['Accueil','Cabinet','Expertises','Blog','Contact'].forEach(k => {
+      const on = a === k.toLowerCase();
+      v['c' + k] = on ? '#5DE0E6' : 'rgba(255,255,255,.8)';
+      v['b' + k] = on ? 'rgba(93,224,230,.16)' : 'transparent';
+      v['s' + k] = on ? 'inset 0 1px 0 rgba(255,255,255,.25),inset 0 0 0 1px rgba(93,224,230,.35)' : 'none';
+    });
+    return Object.assign(v, L);
+  }
+}
+</script>
+</body>
+</html>
