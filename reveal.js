@@ -17,6 +17,16 @@
       R('[style*="border-top: 2px solid rgb(12, 48, 87)"]', 'border-top-color:rgba(234,242,250,.7) !important;'),
       R('input|select|textarea', 'color:#EAF2FA !important;'),
       R('input::placeholder|textarea::placeholder', 'color:#7F93A8 !important;'),
+      // Section Le mot de la gerante : son fond est une photo eclaircie sous un voile
+      // blanc. En nuit, le texte passe en clair mais le voile restait blanc, donc les
+      // ecritures devenaient invisibles. On assombrit le voile et la photo.
+      // Section Nos valeurs : son fond #EEF3F8 restait clair en nuit, le titre blanc
+      // disparaissait dessus.
+      R('[style*="rgb(238, 243, 248)"]',
+        'background:radial-gradient(45% 60% at 12% 20%,rgba(93,224,230,.14),rgba(93,224,230,0) 70%),radial-gradient(45% 60% at 88% 80%,rgba(0,74,173,.24),rgba(0,74,173,0) 70%),#08203D !important;'),
+      R('[style*="rgba(255, 255, 255, 0.94)"]',
+        'background:linear-gradient(90deg,rgba(4,16,31,.93) 0%,rgba(4,16,31,.86) 42%,rgba(8,32,61,.62) 100%),radial-gradient(40% 50% at 8% 18%,rgba(93,224,230,.16),rgba(93,224,230,0) 70%) !important;'),
+      R('[style*="brightness(1.35)"]', 'filter:brightness(.42) saturate(.8) !important;'),
       R('img[src$="logo-lexs.webp"]', 'content:url(assets/logo-lexs-ondark.webp);'),
       R('img[src$="logo-lexs-icon.webp"]', 'content:url(assets/logo-lexs-icon-ondark.webp);'),
       '[style*="0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s"] > div:first-child{transition:color .3s ease;}',
