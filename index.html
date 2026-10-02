@@ -9,6 +9,8 @@
 <body>
 <x-dc>
 <helmet>
+<link rel="preload" as="image" href="assets/hero-cabinet.webp" fetchpriority="high">
+
 <title>LexSolutions · Accueil</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +58,7 @@
       <div onMouseMove="{{ pWake }}" onMouseEnter="{{ pWake }}" onTouchStart="{{ pWake }}" style="position:relative;display:flex;justify-content:center;align-self:end;">
         <div style="position:relative;display:flex;justify-content:center;width:100%;opacity:{{ pOp }};transform:{{ pTf }};filter:{{ pBlur }};transition:opacity 1.4s ease,transform 1.4s cubic-bezier(.22,1,.36,1),filter 1.4s ease;">
         <div style="position:relative;width:min(100%,400px);aspect-ratio:4/5;border-radius:220px 220px 0 0;overflow:hidden;background:linear-gradient(180deg,#164A85,#0A2748);border:1px solid rgba(93,224,230,.25);border-bottom:none;-webkit-mask-image:linear-gradient(180deg,#000 62%,rgba(0,0,0,0) 100%);mask-image:linear-gradient(180deg,#000 62%,rgba(0,0,0,0) 100%);">
-          <img src="assets/hero-expertises.jpg" alt="Cabinet LexSolutions" style="width:100%;height:100%;object-fit:cover;object-position:62% center;display:block;" />
+          <img src="assets/hero-expertises.webp" alt="Cabinet LexSolutions" style="width:100%;height:100%;object-fit:cover;object-position:62% center;display:block;" />
           <div style="position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(180deg,rgba(10,39,72,0),rgba(10,39,72,.85));"></div>
           
         </div>
@@ -67,7 +69,7 @@
         <sc-if value="{{ showSeal }}" hint-placeholder-val="{{ true }}">
           <div style="position:absolute;left:max(0px,calc(50% - 270px));top:18%;width:126px;height:126px;border-radius:50%;background:rgba(10,39,72,.72);backdrop-filter:blur(6px);border:1px solid rgba(93,224,230,.35);display:flex;align-items:center;justify-content:center;">
             {{ seal }}
-            <img src="assets/logo-lexs-icon-ondark.png" alt="" style="position:absolute;height:40px;width:auto;" />
+            <img src="assets/logo-lexs-icon-ondark.webp" alt="" style="position:absolute;height:40px;width:auto;" />
           </div>
         </sc-if>
       </div>
@@ -159,7 +161,7 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px;align-items:end;">
       <article style="position:relative;min-height:440px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 0 0 1px rgba(93,224,230,.55),0 24px 50px -10px rgba(0,74,173,.55),0 0 42px rgba(93,224,230,.45);">
-        <img src="assets/photo-affaires.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+        <img src="assets/photo-affaires.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,48,87,.1) 0%,rgba(12,48,87,.55) 45%,rgba(10,39,72,.96) 100%);"></div>
         <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Droit des affaires</span>
         <div style="position:relative;">
@@ -168,7 +170,7 @@
         </div>
       </article>
       <article style="position:relative;min-height:480px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 0 0 1px rgba(93,224,230,.55),0 24px 50px -10px rgba(0,74,173,.55),0 0 42px rgba(93,224,230,.45);">
-        <img src="assets/photo-fiscalite.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+        <img src="assets/photo-fiscalite.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,48,87,.1) 0%,rgba(12,48,87,.55) 45%,rgba(10,39,72,.96) 100%);"></div>
         <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Fiscalité</span>
         <div style="position:relative;">
@@ -177,7 +179,7 @@
         </div>
       </article>
       <article style="position:relative;min-height:480px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 0 0 1px rgba(93,224,230,.55),0 24px 50px -10px rgba(0,74,173,.55),0 0 42px rgba(93,224,230,.45);">
-        <img src="assets/photo-douane.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+        <img src="assets/photo-douane.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,48,87,.1) 0%,rgba(12,48,87,.55) 45%,rgba(10,39,72,.96) 100%);"></div>
         <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Douane &amp; transit</span>
         <div style="position:relative;">
@@ -186,7 +188,7 @@
         </div>
       </article>
       <article style="position:relative;min-height:440px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 0 0 1px rgba(93,224,230,.55),0 24px 50px -10px rgba(0,74,173,.55),0 0 42px rgba(93,224,230,.45);">
-        <img src="assets/photo-ppp.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;" />
+        <img src="assets/photo-ppp.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,48,87,.1) 0%,rgba(12,48,87,.55) 45%,rgba(10,39,72,.96) 100%);"></div>
         <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Marchés publics &amp; PPP</span>
         <div style="position:relative;">
@@ -201,7 +203,7 @@
   <section id="methode" style="position:relative;padding:0 clamp(12px,2vw,24px);overflow:hidden;isolation:isolate;">
     <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="lignes" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
     <div style="position:relative;border-radius:28px;overflow:hidden;background:#0A2748;padding:clamp(50px,7vw,90px) clamp(20px,5vw,60px);">
-      <img src="assets/photo-couverture-dos.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 70%;opacity:.3;" />
+      <img src="assets/photo-couverture-dos.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 70%;opacity:.3;" />
       <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(10,39,72,.96) 0%,rgba(10,39,72,.8) 50%,rgba(0,74,173,.45) 100%);"></div>
       <div style="position:relative;max-width:520px;">
         <span style="display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:6px 12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);">Notre méthode</span>
@@ -264,7 +266,7 @@
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;"><span style="width:7px;height:7px;border-radius:50%;background:#5DE0E6;"></span><span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8A97A6;">Questions fréquentes</span></div>
         <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(34px,4.4vw,54px);line-height:1.05;color:#0C3057;">Vos questions,<br /><em style="color:#004AAD;">nos réponses</em></h2>
         <div style="margin-top:44px;display:flex;gap:18px;align-items:center;">
-          <img src="assets/hero-cabinet.jpg" alt="" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:35% center;border:3px solid #fff;box-shadow:0 8px 24px rgba(12,48,87,.18);" />
+          <img src="assets/hero-cabinet.webp" alt="" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:35% center;border:3px solid #fff;box-shadow:0 8px 24px rgba(12,48,87,.18);" />
           <div>
             <div style="font-family:'Playfair Display',serif;font-size:21px;line-height:1.25;color:#0C3057;">Un avis clair, dès le premier échange.</div>
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A97A6;margin-top:6px;">Tatiana NDJOBO · Gérante</div>
@@ -293,7 +295,7 @@
   <section style="position:relative;padding:0 clamp(20px,5vw,64px) clamp(60px,8vw,100px);overflow:hidden;isolation:isolate;">
     <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"><x-import component-from-global-scope="fond-premium" from="./fond-premium.js" variant="lignes" color="#004AAD" tone="light" hint-size="100%,100%"></x-import></div>
     <div style="position:relative;border-radius:28px;overflow:hidden;background:linear-gradient(120deg,#0C3057 0%,#004AAD 100%);padding:clamp(36px,5vw,60px);display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;">
-      <img src="assets/logo-lexs-icon-ondark.png" alt="" style="position:absolute;right:-60px;top:50%;transform:translateY(-50%);height:320px;width:auto;opacity:.08;" />
+      <img src="assets/logo-lexs-icon-ondark.webp" alt="" style="position:absolute;right:-60px;top:50%;transform:translateY(-50%);height:320px;width:auto;opacity:.08;" />
       <div style="position:relative;max-width:560px;">
         <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.4vw,42px);line-height:1.1;color:#fff;">Un dossier à sécuriser ? <em style="color:#5DE0E6;">Parlons-en.</em></h2>
         <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.75);margin-top:14px;">Le pôle concerné revient vers vous pour un premier échange de cadrage.</p>
@@ -324,10 +326,10 @@ class Component extends DCLogic {
     ["Comment démarrer ?", "Remplissez le formulaire de contact ou appelez le cabinet au +237 655 27 20 37. Le pôle concerné revient vers vous pour organiser le premier échange."]
   ];
   vData = [
-    { n: '01', title: 'Droit des affaires', desc: "De la création aux opérations de croissance, selon le droit OHADA.", img: 'assets/photo-affaires.png', href: 'droit-des-affaires.html' },
-    { n: '02', title: 'Fiscalité', desc: "Un outil d'optimisation et de sécurité : échéances, conformité, défense.", img: 'assets/photo-fiscalite.png', href: 'fiscalite.html' },
-    { n: '03', title: 'Douane & transit', desc: "Classement tarifaire, régimes douaniers et résolution des litiges.", img: 'assets/photo-douane.png', href: 'douane-transit.html' },
-    { n: '04', title: 'Marchés publics & PPP', desc: "Montage, soumission et exécution des contrats de la commande publique.", img: 'assets/photo-ppp.jpg', href: 'marches-publics-ppp.html' }
+    { n: '01', title: 'Droit des affaires', desc: "De la création aux opérations de croissance, selon le droit OHADA.", img: 'assets/photo-affaires.webp', href: 'droit-des-affaires.html' },
+    { n: '02', title: 'Fiscalité', desc: "Un outil d'optimisation et de sécurité : échéances, conformité, défense.", img: 'assets/photo-fiscalite.webp', href: 'fiscalite.html' },
+    { n: '03', title: 'Douane & transit', desc: "Classement tarifaire, régimes douaniers et résolution des litiges.", img: 'assets/photo-douane.webp', href: 'douane-transit.html' },
+    { n: '04', title: 'Marchés publics & PPP', desc: "Montage, soumission et exécution des contrats de la commande publique.", img: 'assets/photo-ppp.webp', href: 'marches-publics-ppp.html' }
   ];
   vGo(i, dir) {
     const L = this.vData.length, cur = this.state.vi ?? 0; i = (i + L) % L; if (i === cur) return;
@@ -349,8 +351,18 @@ class Component extends DCLogic {
   }
   startHero() {
     const cv = this.heroRef && this.heroRef.current; if (!cv) return;
-    const srcs = ['hero-cabinet.jpg','hero-affaires.jpg','hero-fiscalite.jpg','hero-douane.jpg','hero-ppp.jpg','hero-expertises.jpg'].map(s => 'assets/' + s);
-    const imgs = srcs.map(s => { const i = new Image(); i.src = s; return i; });
+    const srcs = ['hero-cabinet.webp','hero-affaires.webp','hero-fiscalite.webp','hero-douane.webp','hero-ppp.webp','hero-expertises.webp'].map(s => 'assets/' + s);
+    // La premiere vue part seule et en priorite : lancees ensemble, les six se
+    // partagent la bande passante et le fond reste vide longtemps sur reseau lent.
+    const imgs = srcs.map(() => new Image());
+    imgs[0].fetchPriority = 'high';
+    imgs[0].src = srcs[0];
+    const chargerLaSuite = () => {
+      for (let k = 1; k < srcs.length; k++) { imgs[k].fetchPriority = 'low'; imgs[k].src = srcs[k]; }
+    };
+    if (imgs[0].complete) chargerLaSuite();
+    else { imgs[0].addEventListener('load', chargerLaSuite, { once: true });
+           imgs[0].addEventListener('error', chargerLaSuite, { once: true }); }
     const ctx = cv.getContext('2d'), buf = document.createElement('canvas'), bctx = buf.getContext('2d');
     const mk = document.createElement('canvas'), mctx = mk.getContext('2d');
     const MW = 360, MH = 200; mk.width = MW; mk.height = MH;

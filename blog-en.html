@@ -27,7 +27,7 @@
 <div style="max-width:1320px;margin:0 auto;background:#fff;border-radius:clamp(0px,1.6vw,22px);overflow:hidden;box-shadow:0 30px 80px rgba(12,48,87,.14);">
 
   <header style="position:relative;background:#0A2748;overflow:hidden;">
-    <img src="assets/hero-blog.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.3;" />
+    <img src="assets/hero-blog.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.3;" />
     <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,39,72,.96) 0%,rgba(10,39,72,.8) 55%,rgba(0,74,173,.45) 100%);"></div>
     <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#5DE0E6,#004AAD);"></div>
     <dc-import name="Nav" lang="en" alt="blog.html" active="blog" hint-size="100%,96px"></dc-import>
@@ -95,13 +95,13 @@
 class Component extends DCLogic {
   state = { cat: 'All', sub: false };
   data = [
-    { cat:'Taxation', title:'Tax audits: five steps to prepare', excerpt:'Organising records, meeting response deadlines, a single point of contact: best practice before and during a tax audit.', img:'assets/photo-fiscalite.png', pos:'center', date:'22 Sept 2026', read:'6 min' },
-    { cat:'Customs', title:'Suspensive regimes: anticipating discharge deadlines', excerpt:'Temporary admission, warehousing, transit: how to track deadlines to avoid penalties and delays at the port.', img:'assets/photo-douane.png', pos:'center', date:'10 Sept 2026', read:'5 min' },
-    { cat:'Business law', title:'Shareholders’ agreements: clauses not to overlook', excerpt:'Governance, exit, pre-emption, non-compete: the points to settle as soon as a new shareholder comes in.', img:'assets/photo-affaires.png', pos:'center', date:'28 Aug 2026', read:'7 min' },
-    { cat:'Public procurement', title:'Responding to a tender: securing your bid', excerpt:'Reviewing the tender documents, administrative documents, bid consistency: the steps to limit the risk of rejection.', img:'assets/photo-ppp.jpg', pos:'70% center', date:'12 Aug 2026', read:'6 min' },
-    { cat:'Customs', title:'AfCFTA: understanding the rules of origin', excerpt:'What companies must check to benefit from the continental market’s tariff preferences.', img:'assets/photo-couverture-dos.png', pos:'center 70%', date:'30 July 2026', read:'5 min' },
-    { cat:'Taxation', title:'Transfer pricing: documenting intra-group transactions', excerpt:'Pricing methods, documentation and margin justification: what the tax authorities expect.', img:'assets/photo-cabinet.png', pos:'center', date:'15 July 2026', read:'8 min' },
-    { cat:'Business law', title:'Debt recovery: OHADA simplified procedures', excerpt:'Formal notice, payment order, enforcement: choosing the right procedure for the situation.', img:'assets/photo-affaires.png', pos:'center 30%', date:'2 July 2026', read:'6 min' }
+    { cat:'Taxation', title:'Tax audits: five steps to prepare', excerpt:'Organising records, meeting response deadlines, a single point of contact: best practice before and during a tax audit.', img:'assets/photo-fiscalite.webp', pos:'center', date:'22 Sept 2026', read:'6 min' },
+    { cat:'Customs', title:'Suspensive regimes: anticipating discharge deadlines', excerpt:'Temporary admission, warehousing, transit: how to track deadlines to avoid penalties and delays at the port.', img:'assets/photo-douane.webp', pos:'center', date:'10 Sept 2026', read:'5 min' },
+    { cat:'Business law', title:'Shareholders’ agreements: clauses not to overlook', excerpt:'Governance, exit, pre-emption, non-compete: the points to settle as soon as a new shareholder comes in.', img:'assets/photo-affaires.webp', pos:'center', date:'28 Aug 2026', read:'7 min' },
+    { cat:'Public procurement', title:'Responding to a tender: securing your bid', excerpt:'Reviewing the tender documents, administrative documents, bid consistency: the steps to limit the risk of rejection.', img:'assets/photo-ppp.webp', pos:'70% center', date:'12 Aug 2026', read:'6 min' },
+    { cat:'Customs', title:'AfCFTA: understanding the rules of origin', excerpt:'What companies must check to benefit from the continental market’s tariff preferences.', img:'assets/photo-couverture-dos.webp', pos:'center 70%', date:'30 July 2026', read:'5 min' },
+    { cat:'Taxation', title:'Transfer pricing: documenting intra-group transactions', excerpt:'Pricing methods, documentation and margin justification: what the tax authorities expect.', img:'assets/photo-cabinet.webp', pos:'center', date:'15 July 2026', read:'8 min' },
+    { cat:'Business law', title:'Debt recovery: OHADA simplified procedures', excerpt:'Formal notice, payment order, enforcement: choosing the right procedure for the situation.', img:'assets/photo-affaires.webp', pos:'center 30%', date:'2 July 2026', read:'6 min' }
   ];
   renderVals() {
     const cats = ['All','Business law','Taxation','Customs','Public procurement'];
