@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lexsolutions.cm/article-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/article.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/blog-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/blog.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/cabinet-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/cabinet.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/confidentialite-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/confidentialite.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/contact-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/contact.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/douane-transit-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/douane-transit.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/droit-des-affaires-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/droit-des-affaires.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/expertises-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/expertises.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/fiscalite-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/fiscalite.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/index-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/marches-publics-ppp-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/marches-publics-ppp.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/mentions-legales-en.html</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lexsolutions.cm/mentions-legales.html</loc><lastmod>2026-10-05</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://lexsolutions.cm/article.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/article.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/article-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/article-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/article.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/article-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/blog.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/blog.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/blog-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/blog-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/blog.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/blog-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/cabinet.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/cabinet.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/cabinet-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/cabinet-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/cabinet.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/cabinet-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/confidentialite.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/confidentialite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/confidentialite-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/confidentialite-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/confidentialite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/confidentialite-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/contact.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/contact.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/contact-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/contact-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/contact.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/contact-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/douane-transit.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/douane-transit.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/douane-transit-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/douane-transit-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/douane-transit.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/douane-transit-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/droit-des-affaires.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/droit-des-affaires.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/droit-des-affaires-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/droit-des-affaires-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/droit-des-affaires.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/droit-des-affaires-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/expertises.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/expertises.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/expertises-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/expertises-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/expertises.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/expertises-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/fiscalite.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/fiscalite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/fiscalite-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/fiscalite-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/fiscalite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/fiscalite-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/index-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/index-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/index-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/marches-publics-ppp.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/marches-publics-ppp.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/marches-publics-ppp-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/marches-publics-ppp-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/marches-publics-ppp.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/marches-publics-ppp-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/mentions-legales.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/mentions-legales-en.html"/></url>
+  <url><loc>https://lexsolutions.cm/mentions-legales-en.html</loc><lastmod>2026-10-05</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://lexsolutions.cm/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://lexsolutions.cm/mentions-legales-en.html"/></url>
 </urlset>
