@@ -1,0 +1,5 @@
+# Une seule adresse : https://lexsolutions.cm (sans www), redirection permanente.
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://lexsolutions.cm%{REQUEST_URI} [L,R=301]
