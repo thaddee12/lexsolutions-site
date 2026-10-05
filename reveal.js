@@ -22,6 +22,10 @@
       // ecritures devenaient invisibles. On assombrit le voile et la photo.
       // Section Nos valeurs : son fond #EEF3F8 restait clair en nuit, le titre blanc
       // disparaissait dessus.
+      // Pied de page : un fondu blanc de 120 px raccorde le pied sombre a une page
+      // claire. En nuit la page est sombre, la bande blanche n a plus lieu d etre.
+      R('[style*="height: 120px"][style*="linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0))"]',
+        'background:linear-gradient(180deg,#04101F,rgba(4,16,31,0)) !important;'),
       R('[style*="rgb(238, 243, 248)"]',
         'background:radial-gradient(45% 60% at 12% 20%,rgba(93,224,230,.14),rgba(93,224,230,0) 70%),radial-gradient(45% 60% at 88% 80%,rgba(0,74,173,.24),rgba(0,74,173,0) 70%),#08203D !important;'),
       R('[style*="rgba(255, 255, 255, 0.94)"]',
