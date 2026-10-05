@@ -1,3 +1,4 @@
-# Maquette de visualisation, non destinee au referencement.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://lexsolutions.cm/sitemap.xml
