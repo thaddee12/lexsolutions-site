@@ -19,7 +19,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LegalService", "@id": "https://lexsolutions.cm/#cabinet", "name": "LexSolutions", "url": "https://lexsolutions.cm/", "logo": "https://lexsolutions.cm/assets/logo-lexs.webp", "image": "https://lexsolutions.cm/assets/og-lexsolutions.jpg", "telephone": "+237655272037", "email": "contact@lexsolutions.cm", "address": [{"@type": "PostalAddress", "addressLocality": "Douala", "addressCountry": "CM"}], "areaServed": {"@type": "Country", "name": "Cameroon"}, "availableLanguage": ["fr", "en"], "knowsAbout": ["Business law", "OHADA", "Taxation", "Tax audit", "Customs and transit", "Public procurement", "Public-private partnerships"], "description": "Legal, tax and customs advisory firm in Douala, Cameroon: business law, taxation, customs and transit, public procurement and public-private partnerships, in Cameroon and the CEMAC zone.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Practice areas", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business law", "description": "We secure your company's activities, commercial operations and projects, in compliance with the applicable legal and regulatory frameworks.", "url": "https://lexsolutions.cm/droit-des-affaires-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Taxation", "description": "We treat taxation as a tool for optimisation and security: anticipating deadlines, compliant filings and defence during tax inspections.", "url": "https://lexsolutions.cm/fiscalite-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Customs & transit", "description": "Port clearance and cross-border operations concentrate critical costs and risks. We secure tariff classification, customs regimes and dispute resolution.", "url": "https://lexsolutions.cm/douane-transit-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public procurement and public-private partnerships", "description": "We support private companies and public entities through the award and performance of public procurement contracts and public-private partnerships.", "url": "https://lexsolutions.cm/marches-publics-ppp-en.html"}}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LegalService", "@id": "https://lexsolutions.cm/#cabinet", "name": "LexSolutions", "url": "https://lexsolutions.cm/", "logo": "https://lexsolutions.cm/assets/logo-lexs.webp", "image": "https://lexsolutions.cm/assets/og-lexsolutions.jpg", "telephone": "+237655272037", "email": "contact@lexsolutions.cm", "address": [{"@type": "PostalAddress", "addressLocality": "Douala", "addressCountry": "CM"}], "areaServed": {"@type": "Country", "name": "Cameroon"}, "availableLanguage": ["fr", "en"], "knowsAbout": ["Business law", "OHADA", "Taxation", "Tax audit", "Customs and transit", "Public procurement", "Public-private partnerships"], "description": "Legal, tax and customs advisory firm in Douala, Cameroon: business law, taxation, customs and transit, public procurement and public-private partnerships, in Cameroon and the CEMAC zone.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Practice areas", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business law", "description": "We secure your company's activities, operations and projects, in compliance with the applicable legal and regulatory frameworks.", "url": "https://lexsolutions.cm/droit-des-affaires-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Taxation", "description": "We treat taxation as a tool for optimisation and security: anticipating deadlines, compliant filings and defence during tax inspections.", "url": "https://lexsolutions.cm/fiscalite-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Customs & transit", "description": "Port clearance and cross-border operations concentrate critical costs and risks. We secure tariff classification, customs regimes and dispute resolution.", "url": "https://lexsolutions.cm/douane-transit-en.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public procurement and public-private partnerships", "description": "We support private companies and public entities through the award and performance of public procurement and public-private partnerships.", "url": "https://lexsolutions.cm/marches-publics-ppp-en.html"}}]}}</script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -37,7 +37,7 @@
   ::selection { background:#5DE0E6; color:#0C3057; }
   input, select, textarea, button { font-family:'Archivo',sans-serif; }
 </style>
-<script src="reveal.js"></script>
+<script src="reveal.js?v=20261017"></script>
 </helmet>
 <div style="background:#E9EDF2;padding:clamp(0px,1.6vw,20px);">
 <div style="max-width:1320px;margin:0 auto;background:#fff;border-radius:clamp(0px,1.6vw,22px);overflow:hidden;box-shadow:0 30px 80px rgba(12,48,87,.14);">
@@ -81,7 +81,7 @@
             <option value="Droit des affaires">Business law</option>
             <option value="Fiscalité">Taxation</option>
             <option value="Douane &amp; transit">Customs &amp; transit</option>
-            <option value="Marchés publics &amp; PPP">Public procurement &amp; PPP</option>
+            <option value="Marchés publics et partenariats public-privé">Public procurement and public-private partnerships</option>
           </select>
           <textarea name="message" rows="7" placeholder="Describe your situation" style="border:1px solid #DDE3EA;border-radius:12px;padding:14px 16px;font-size:14px;color:#0C3057;outline:none;resize:vertical;" style-focus="border-color:#004AAD;box-shadow:0 0 0 3px rgba(93,224,230,.25);"></textarea>
           <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5;color:#42586C;cursor:pointer;"><input type="checkbox" required="required" style="margin-top:2px;accent-color:#004AAD;" /><span>I agree that my information may be used to handle my request, in accordance with the <a href="confidentialite-en.html" style="font-weight:600;">privacy policy</a>.</span></label>
@@ -124,7 +124,7 @@
 // Envoi via Formspree : remplacer FORM_ID par l'identifiant du formulaire (formspree.io).
 // Accusé de réception automatique : à activer dans Formspree (Settings > Autoresponse).
 const FORM_ENDPOINT = 'https://formspree.io/f/FORM_ID';
-const POLE_EN = { 'Droit des affaires':'Business law', 'Fiscalité':'Taxation', 'Douane & transit':'Customs & transit', 'Marchés publics & PPP':'Public procurement & PPP' };
+const POLE_EN = { 'Droit des affaires':'Business law', 'Fiscalité':'Taxation', 'Douane & transit':'Customs & transit', 'Marchés publics et partenariats public-privé':'Public procurement and public-private partnerships' };
 class Component extends DCLogic {
   state = { sent: null, sending: false, error: '' };
   submit = async ev => {

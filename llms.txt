@@ -16,11 +16,11 @@
 ### Droit des affaires
 Page : https://lexsolutions.cm/droit-des-affaires.html
 
-Nous sécurisons les activités de votre entreprise, ses opérations commerciales et ses projets, dans le respect des cadres juridiques et réglementaires applicables.
+Nous sécurisons les activités de votre entreprise, ses opérations et ses projets, dans le respect des cadres juridiques et réglementaires applicables.
 
-- **Création et structuration des entreprises** : Choix de la forme sociale, rédaction des statuts, pactes d'associés, gouvernance.
-- **Contrats commerciaux** : Rédaction, négociation et audit des engagements stratégiques et récurrents.
-- **Opérations sur capital** : Cessions de titres, fusions-acquisitions, restructurations et due diligence.
+- **Création et structuration des entreprises** : Choix de la forme sociale, rédaction des statuts, pactes d'associés.
+- **Contrats commerciaux** : Rédaction, négociation et audit des engagements stratégiques.
+- **Opérations sur capital** : Cessions de titres, fusions-acquisitions, restructurations.
 - **Droit social et RH** : Contrats de travail, restructurations sociales, gestion des ruptures, précontentieux.
 - **Recouvrement et sûretés** : Mises en demeure, procédures simplifiées de recouvrement, voies d'exécution.
 - **Prévention et gestion des différends** : Gestion des litiges commerciaux, assistance devant les juridictions et les instances arbitrales.
@@ -32,9 +32,9 @@ Page : https://lexsolutions.cm/fiscalite.html
 
 Nous traitons la fiscalité comme un outil d'optimisation et de sécurité : anticipation des échéances, conformité des déclarations et défense en cas de contrôle.
 
-- **Conseil fiscal et veille réglementaire** : Consultations écrites, suivi des lois de finances, analyse des impacts fiscaux.
-- **Déclarations et conformité fiscales** : Revue prioritaire des déclarations souscrites et cartographie des risques.
-- **Contrôle fiscal** : Assistance lors des vérifications sur place, préparation des réponses aux notifications, négociations.
+- **Conseil fiscal et veille réglementaire** : Consultations, suivi des lois de finances, analyse des impacts fiscaux.
+- **Déclarations et conformité fiscales** : Revue des déclarations souscrites et cartographie des risques.
+- **Contrôle fiscal** : Assistance lors des contrôles sur place et sur pièces, préparation des réponses aux notifications, négociations.
 - **Réclamations** : Réclamations contentieuses, recours hiérarchiques et procédures devant les juridictions.
 - **Incidences fiscales des opérations** : Analyse des incidences fiscales des opérations commerciales et d'investissement.
 - **Fiscalité internationale** : Application des conventions de non-double imposition, gestion des retenues à la source.
@@ -58,13 +58,13 @@ Cas type : Régularisation de déclarations contentieuses sous régimes suspensi
 ### Marchés publics et partenariats public-privé
 Page : https://lexsolutions.cm/marches-publics-ppp.html
 
-Nous accompagnons les entreprises privées et les entités publiques dans les processus de passation et d'exécution des contrats de marchés publics et des partenariats public-privé.
+Nous accompagnons les entreprises privées et les entités publiques dans les processus de passation et d'exécution des marchés publics et des partenariats public-privé.
 
 - **Analyse des dossiers d'appel d'offres** : Analyse des dossiers d'appel d'offres (DAO), montage des offres.
 - **Préparation et sécurisation juridique des offres** : Assistance au montage juridique et financier des projets d'infrastructure.
 - **Assistance dans les procédures de passation** : Rédaction, revue et négociation des contrats.
-- **Suivi juridique de l'exécution contractuelle** : Suivi de l'exécution, gestion des réclamations financières et rédaction des avenants.
-- **Réclamations et précontentieux** : Recours gracieux et contestations devant les organes de régulation (ARMP).
+- **Suivi juridique de l'exécution contractuelle** : Suivi de l'exécution et rédaction des avenants.
+- **Réclamations et précontentieux** : Gestion des réclamations, recours gracieux et contestations devant les organes de régulation.
 
 Cas type : Accompagnement d'un groupement d'entreprises dans le cadre d'un appel d'offres international de partenariat public-privé : validation de l'offre technique et juridique, sécurisation du contrat de concession et accompagnement lors des négociations avec l'autorité contractante.
 
@@ -83,11 +83,11 @@ LexSolutions is a legal, tax and customs advisory firm based in Douala, Cameroon
 ### Business law
 Page: https://lexsolutions.cm/droit-des-affaires-en.html
 
-We secure your company's activities, commercial operations and projects, in compliance with the applicable legal and regulatory frameworks.
+We secure your company's activities, operations and projects, in compliance with the applicable legal and regulatory frameworks.
 
-- **Company Formation & Structuring**: Choice of legal form, articles of association, shareholders' agreements, governance.
-- **Commercial Contracts**: Drafting, negotiation and review of strategic and recurring commitments.
-- **Equity Transactions**: Share transfers, mergers and acquisitions, restructurings and due diligence.
+- **Company Formation & Structuring**: Choice of legal form, articles of association, shareholders' agreements.
+- **Commercial Contracts**: Drafting, negotiation and review of strategic commitments.
+- **Equity Transactions**: Share transfers, mergers and acquisitions, restructurings.
 - **Employment & HR Law**: Employment contracts, workforce restructuring, terminations, pre-litigation.
 - **Debt Recovery & Security**: Formal notices, simplified recovery procedures, enforcement measures.
 - **Dispute Prevention & Management**: Commercial dispute management, assistance before courts and arbitral tribunals.
@@ -99,9 +99,9 @@ Page: https://lexsolutions.cm/fiscalite-en.html
 
 We treat taxation as a tool for optimisation and security: anticipating deadlines, compliant filings and defence during tax inspections.
 
-- **Tax Advice & Regulatory Monitoring**: Written opinions, monitoring of Finance Laws, tax impact analysis.
-- **Tax Filings & Compliance**: Priority review of filed returns and risk mapping.
-- **Tax Inspections**: Assistance during on-site inspections, responses to notices, negotiations.
+- **Tax Advice & Regulatory Monitoring**: Advice, monitoring of Finance Laws, tax impact analysis.
+- **Tax Filings & Compliance**: Review of filed returns and risk mapping.
+- **Tax Inspections**: Assistance during on-site and document-based audits, responses to notices, negotiations.
 - **Tax Claims**: Tax claims, administrative appeals and court proceedings.
 - **Tax Impact of Transactions**: Analysis of the tax impact of commercial and investment transactions.
 - **International Taxation**: Application of double tax treaties, management of withholding taxes.
@@ -125,12 +125,12 @@ Typical case: Regularisation of disputed declarations under suspensive regimes: 
 ### Public procurement and public-private partnerships
 Page: https://lexsolutions.cm/marches-publics-ppp-en.html
 
-We support private companies and public entities through the award and performance of public procurement contracts and public-private partnerships.
+We support private companies and public entities through the award and performance of public procurement and public-private partnerships.
 
 - **Tender Document Analysis**: Analysis of tender documents (DAO), bid preparation.
 - **Bid Preparation & Legal Security**: Legal and financial structuring of infrastructure projects.
 - **Award Procedure Support**: Drafting, review and negotiation of contracts.
-- **Legal Monitoring of Contract Performance**: Performance monitoring, handling of financial claims and drafting of amendments.
-- **Claims & Pre-litigation**: Administrative appeals and challenges before the regulator (ARMP).
+- **Legal Monitoring of Contract Performance**: Performance monitoring and drafting of amendments.
+- **Claims & Pre-litigation**: Handling of claims, administrative appeals and challenges before the regulator.
 
 Typical case: Support for a consortium in an international public-private partnership tender: review of the technical and legal bid, securing the concession contract and support during negotiations with the contracting authority.

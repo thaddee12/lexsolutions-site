@@ -17,6 +17,16 @@
       R('[style*="border-top: 2px solid rgb(12, 48, 87)"]', 'border-top-color:rgba(234,242,250,.7) !important;'),
       R('input|select|textarea', 'color:#EAF2FA !important;'),
       R('input::placeholder|textarea::placeholder', 'color:#7F93A8 !important;'),
+      // Formulaire de contact : la carte (blanc 60 %) restait grise, les champs sans
+      // fond prenaient le noir par défaut du navigateur et la liste des pôles, en
+      // fond blanc imposé, affichait un texte clair illisible.
+      R('form[style*="background: rgba(255, 255, 255, 0.6)"]', 'background:rgba(16,45,80,.62) !important;border-color:rgba(255,255,255,.14) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 16px 36px rgba(0,0,0,.35) !important;'),
+      R('form input:not([type="checkbox"])|form select|form textarea', 'background-color:rgba(4,16,31,.55) !important;border-color:rgba(255,255,255,.16) !important;'),
+      R('form select', 'background-image:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\' fill=\'none\'%3E%3Cpath d=\'M2.5 4.5L6 8L9.5 4.5\' stroke=\'%235DE0E6\' stroke-width=\'1.6\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E") !important;'),
+      R('form select option', 'background:#0D2645;color:#EAF2FA;'),
+      R('form input:focus|form select:focus|form textarea:focus', 'border-color:#5DE0E6 !important;'),
+      R('form a', 'color:#6FC3FF !important;'),
+      R('form [role="alert"]', 'color:#FF9A8F !important;'),
       // Section Le mot de la gerante : son fond est une photo eclaircie sous un voile
       // blanc. En nuit, le texte passe en clair mais le voile restait blanc, donc les
       // ecritures devenaient invisibles. On assombrit le voile et la photo.
