@@ -81,7 +81,7 @@
             <option value="Droit des affaires">Business law</option>
             <option value="Fiscalité">Taxation</option>
             <option value="Douane &amp; transit">Customs &amp; transit</option>
-            <option value="Marchés publics et partenariats public-privé">Public procurement and public-private partnerships</option>
+            <option value="Marchés publics &amp; PPP">Public procurement &amp; PPP</option>
           </select>
           <textarea name="message" rows="7" placeholder="Describe your situation" style="border:1px solid #DDE3EA;border-radius:12px;padding:14px 16px;font-size:14px;color:#0C3057;outline:none;resize:vertical;" style-focus="border-color:#004AAD;box-shadow:0 0 0 3px rgba(93,224,230,.25);"></textarea>
           <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5;color:#42586C;cursor:pointer;"><input type="checkbox" required="required" style="margin-top:2px;accent-color:#004AAD;" /><span>I agree that my information may be used to handle my request, in accordance with the <a href="confidentialite-en.html" style="font-weight:600;">privacy policy</a>.</span></label>
@@ -124,7 +124,7 @@
 // Envoi via Formspree : remplacer FORM_ID par l'identifiant du formulaire (formspree.io).
 // Accusé de réception automatique : à activer dans Formspree (Settings > Autoresponse).
 const FORM_ENDPOINT = 'https://formspree.io/f/FORM_ID';
-const POLE_EN = { 'Droit des affaires':'Business law', 'Fiscalité':'Taxation', 'Douane & transit':'Customs & transit', 'Marchés publics et partenariats public-privé':'Public procurement and public-private partnerships' };
+const POLE_EN = { 'Droit des affaires':'Business law', 'Fiscalité':'Taxation', 'Douane & transit':'Customs & transit', 'Marchés publics & PPP':'Public procurement & PPP' };
 class Component extends DCLogic {
   state = { sent: null, sending: false, error: '' };
   submit = async ev => {

@@ -204,7 +204,7 @@
       <article style="position:relative;min-height:440px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s cubic-bezier(.2,.8,.2,1),background .3s ease,color .3s ease,border-color .3s ease,filter .3s ease;" style-hover="transform:translateY(-8px) scale(1.01);box-shadow:0 0 0 1px rgba(93,224,230,.55),0 24px 50px -10px rgba(0,74,173,.55),0 0 42px rgba(93,224,230,.45);">
         <img src="assets/photo-ppp.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,48,87,.1) 0%,rgba(12,48,87,.55) 45%,rgba(10,39,72,.96) 100%);"></div>
-        <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Marchés publics et partenariats public-privé</span>
+        <span style="position:absolute;top:20px;left:20px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;">Marchés publics &amp; PPP</span>
         <div style="position:relative;">
           <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:22px;line-height:1.2;color:#fff;">Appel d'offres international <em style="color:#5DE0E6;">de partenariat public-privé</em></h3>
           <p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,.78);margin-top:12px;">Validation de l'offre technique et juridique, sécurisation du contrat de concession et accompagnement lors des négociations avec l'autorité contractante.</p>
@@ -343,7 +343,7 @@ class Component extends DCLogic {
     { n: '01', title: 'Droit des affaires', desc: "Créer, structurer, contracter, recouvrer.", img: 'assets/photo-affaires.webp', href: 'droit-des-affaires.html' },
     { n: '02', title: 'Fiscalité', desc: "Anticiper, déclarer, défendre.", img: 'assets/photo-fiscalite.webp', href: 'fiscalite.html' },
     { n: '03', title: 'Douane & transit', desc: "Classer, sécuriser, régulariser, négocier.", img: 'assets/photo-douane.webp', href: 'douane-transit.html' },
-    { n: '04', title: 'Marchés publics et partenariats public-privé', desc: "Candidater, contracter, exécuter, contester.", img: 'assets/photo-ppp.webp', href: 'marches-publics-ppp.html' }
+    { n: '04', title: 'Marchés publics & PPP', desc: "Candidater, contracter, exécuter, contester.", img: 'assets/photo-ppp.webp', href: 'marches-publics-ppp.html' }
   ];
   vGo(i, dir) {
     const L = this.vData.length, cur = this.state.vi ?? 0; i = (i + L) % L; if (i === cur) return;
