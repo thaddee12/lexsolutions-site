@@ -51,7 +51,19 @@
       N + '[role="button"][style*="color 0.5s"]:hover:not(#x):not(#y){color:#5DE0E6 !important;}',
       '[style*="overflow: hidden"] > img:not([src*="logo"]):not([style*="opacity"]){transition:scale .8s cubic-bezier(.2,.8,.2,1);}',
       '[style*="overflow: hidden"]:hover > img:not([src*="logo"]):not([style*="opacity"]){scale:1.06;}',
-      'html.ls-theming *,html.ls-theming *::before{transition:background .6s ease,background-color .6s ease,color .6s ease,border-color .6s ease !important;}'
+      'html.ls-theming *,html.ls-theming *::before{transition:background .6s ease,background-color .6s ease,color .6s ease,border-color .6s ease !important;}',
+      // Téléphone : bouton WhatsApp réduit à son icône (il masquait du contenu),
+      // bandeau cookies compact, liens du pied de page plus faciles à toucher.
+      '@media (max-width:640px){' +
+        '.ls-wa{padding:6px !important;gap:0 !important;}' +
+        '.ls-wa-label{display:none;}' +
+        '.ls-ck{left:12px !important;bottom:12px !important;width:calc(100% - 24px) !important;padding:14px 16px !important;gap:10px !important;border-radius:18px !important;}' +
+        '.ls-ck > div:first-child{font-size:17px !important;}' +
+        '.ls-ck p{font-size:12.5px !important;line-height:1.5 !important;}' +
+        '.ls-ck button{padding:9px 18px !important;font-size:13px !important;}' +
+        'footer a{display:inline-block;padding-block:9px;}' +
+        'footer [style*="gap: 10px"]{gap:0 !important;}' +
+      '}'
     ].join('\n');
     var st = document.createElement('style'); st.id = 'ls-theme'; st.textContent = css; document.head.appendChild(st);
     var saved = null; try { saved = localStorage.getItem('ls-theme'); } catch (e) {}
