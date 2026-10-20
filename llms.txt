@@ -63,7 +63,7 @@ Nous accompagnons les entreprises privées et les entités publiques dans les pr
 - **Analyse des dossiers d'appel d'offres** : Analyse des dossiers d'appel d'offres (DAO), montage des offres.
 - **Préparation et sécurisation juridique des offres** : Assistance au montage juridique et financier des projets d'infrastructure.
 - **Assistance dans les procédures de passation** : Rédaction, revue et négociation des contrats.
-- **Suivi juridique de l'exécution contractuelle** : Suivi de l'exécution et rédaction des avenants.
+- **Suivi juridique de l'exécution contractuelle** : Suivi de l'exécution des contrats et rédaction des avenants.
 - **Réclamations et précontentieux** : Gestion des réclamations, recours gracieux et contestations devant les organes de régulation.
 
 Cas type : Accompagnement d'un groupement d'entreprises dans le cadre d'un appel d'offres international de partenariat public-privé : validation de l'offre technique et juridique, sécurisation du contrat de concession et accompagnement lors des négociations avec l'autorité contractante.
@@ -130,7 +130,7 @@ We support private companies and public entities through the award and performan
 - **Tender Document Analysis**: Analysis of tender documents (DAO), bid preparation.
 - **Bid Preparation & Legal Security**: Legal and financial structuring of infrastructure projects.
 - **Award Procedure Support**: Drafting, review and negotiation of contracts.
-- **Legal Monitoring of Contract Performance**: Performance monitoring and drafting of amendments.
+- **Legal Monitoring of Contract Performance**: Monitoring of contract performance and drafting of amendments.
 - **Claims & Pre-litigation**: Handling of claims, administrative appeals and challenges before the regulator.
 
 Typical case: Support for a consortium in an international public-private partnership tender: review of the technical and legal bid, securing the concession contract and support during negotiations with the contracting authority.

@@ -108,7 +108,7 @@ class Component extends DCLogic {
     { href:'marches-publics-ppp-en.html', id:'ppp', n:'04', title:'Public procurement and public-private partnerships', img:'assets/photo-ppp.webp', pos:'70% center',
       lead:"We support private companies and public entities through the award and performance of public procurement and public-private partnerships.",
       cas:"Support for a consortium in an international public-private partnership tender: review of the technical and legal bid, securing the concession contract and support during negotiations with the contracting authority.",
-      items:[["Tender Document Analysis","Analysis of tender documents (DAO), bid preparation."],["Bid Preparation & Legal Security","Legal and financial structuring of infrastructure projects."],["Award Procedure Support","Drafting, review and negotiation of contracts."],["Legal Monitoring of Contract Performance","Performance monitoring and drafting of amendments."],["Claims & Pre-litigation","Handling of claims, administrative appeals and challenges before the regulator."]] }
+      items:[["Tender Document Analysis","Analysis of tender documents (DAO), bid preparation."],["Bid Preparation & Legal Security","Legal and financial structuring of infrastructure projects."],["Award Procedure Support","Drafting, review and negotiation of contracts."],["Legal Monitoring of Contract Performance","Monitoring of contract performance and drafting of amendments."],["Claims & Pre-litigation","Handling of claims, administrative appeals and challenges before the regulator."]] }
   ];
   renderVals() {
     return { poles: this.poles.map((p, i) => ({ ...p, bg: i % 2 ? '#F7F9FB' : '#fff', order: i % 2 ? 2 : 0, items: p.items.map(([t, d]) => ({ t, d })) })) };
